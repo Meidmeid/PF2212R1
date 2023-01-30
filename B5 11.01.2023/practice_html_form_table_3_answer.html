@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat City Registration</title>
+</head>
+
+<body>
+    <h1>Cat City ID Registration</h1>
+    <form action="">
+        Name: <br>
+        <!--
+            input type="text" -> cho nhập mọi kí tự
+        -->
+        <input type="text" name="cat-name"><br>
+
+        <br>
+
+        Age: <br>
+        <!--
+            input type="number" -> chỉ được nhập số
+        -->
+        <input type="number" name="cat-age"><br>
+
+        <br>
+
+        Gender: <br>
+        <!--
+            input type="radio" -> chỉ được chọn 1 trong nhiều option
+        -->
+        <input type="radio" name="cat-gender" value="male"> Male
+        <input type="radio" name="cat-gender" value="female"> Female
+        <input type="radio" name="cat-gender" value="other"> Other
+
+        <br><br>
+
+        Fur Color:<br>
+        <input type="radio" name="cat-fur-color" value="black">Đen
+        <input type="radio" name="cat-fur-color" value="white">Trắng
+        <input type="radio" name="cat-fur-color" value="yellow">Vàng
+
+
+        <br><br>
+
+        Cat loves to: <br>
+        <!--
+            input type="checkbox" -> có thể chọn 1 HOẶC nhiều option tùy thích
+        -->
+        <input type="checkbox" name="cat-favorite-activites" value="eat"> Eat
+        <input type="checkbox" name="cat-favorite-activites" value="drink-milk"> Drink Milk
+        <input type="checkbox" name="cat-favorite-activites" value="sleep"> Sleep
+
+        <br><br>
+
+        Cat Hates: <br>
+        <input type="checkbox" name="Cat-Hates" value="Bath"> Bath
+        <input type="checkbox" name="Cat-Hates" value="Hug"> Hug
+        <input type="checkbox" name="Cat-Hates" value="other-cat"> Other cat
+
+        <br>
+
+        <button type="submit">Finish!</button>
+    </form>
+
+</body>
+
+</html>
