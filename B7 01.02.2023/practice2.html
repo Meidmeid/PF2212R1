@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 2</title>
+</head>
+<body>
+    <h1>Practice 2</h1>
+    <p>Nhập vào chiều dài, chiều rộng của hình chữ nhật. In ra chu vi, diện tích của hình chữ nhật đó</p>
+
+    <script>
+        // Input
+        let length = parseFloat(prompt('Please input the length of rectangle: '));
+        let width = parseFloat(prompt('Please input the width of rectangle: '));
+
+        // Processing/ Calculating
+        let perimeter = ( length + width ) * 2;
+        let area = ( length * width );
+
+        // Output
+        // nối chuỗi bằng `....${variable} ` hoặc "....." + variable
+        alert(`Perimeter of rectangle is: ${perimeter}`);
+        alert("Area of rectangle is: " + area);
+        
+    </script>
+</body>
+</html>
