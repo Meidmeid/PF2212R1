@@ -9,13 +9,14 @@
   <body>
     <form action="#">
       Mark: <input id="mark" type="text" />
-      <button id="btn-action">Submit</button>
+      <!-- thêm type="button" vào thẻ button để k bị auto submit -->
+      <button id="btn-action" type="button">Submit</button>
     </form>
     <script>
       let btnAction = document.getElementById("btn-action");
       btnAction.addEventListener("click", () => {
         let markElem = document.getElementById("mark").value;
-        if (markElem >= 8.5) {
+        if (parseFloat(markElem) >= 8.5) {
           console.log("Bạn được tuyển thẳng");
         } else {
           console.log("Bạn chưa đủ điểm");
