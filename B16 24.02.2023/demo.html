@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+    <script>
+        //  Nhập dữ liệu
+        let n = number(prompt('Nhập số lượng phần tử: '));
+        let arr = [];
+        for (let i = 0; i < n; i++) {
+            let value = Number(prompt("Nhập vào phần tử số " + i));
+            arr[i] = value;
+
+        }
+
+        // Xuất dữ liệu
+        document.write(arr.join(","))
+        for (let i = 0; i < n; i++) {
+            document.write(arr[i] + ',')
+        }
+
+        // 1 mảng cho sẵn
+        // tìm kiếm xem 1 phần tử có trong mảng hay không?
+        let arr2 = [2, 3, 4, 5, 6];
+        let key = 5;
+        // giả sử không có phần tử key trong mảng
+        let index = -1;
+        // duyệt mảng, nếu có phần tử key thì gán index = i
+        for (let i2 = 0; i2 < arr2.length; i++) {
+            if(key == arr[i])
+            index = i;
+
+        }
+
+        if(index == -1) {
+            // thông báo không có phần tử key
+        }
+        else {
+            // thông báo là có phần tử key tại vị trí thứ index
+        }
+
+    </script>
+</body>
+</html>

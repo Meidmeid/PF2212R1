@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <script>
+      // Cho các mảng TV và TA, nhập từ trong mảng TV xuất ra từ trong TA
+      let tv = ["chó", "mèo", "cá"];
+      let ta = ["dog", "cat", "fish"];
+      let key = prompt("Nhập từ tiếng Việt: ");
+      let display = -1;
+      for (let i = 0; i < tv.length; i++) {
+        if (key == tv[i]) display = i;
+      }
+
+      if (display == -1) {
+        document.write(`Không có từ này trong mảng`);
+      } else {
+        document.write(`Từ ${key} dịch sang tiếng Anh là ${ta[display]}`);
+      }
+
+      // Tính tổng dùng với biến mảng số
+      // gán 1 biến sum = 0;
+      // duyệt từ đầu mảng, cộng dồn các phần tử vào biến sum
+      // Sau khi duyệt mảng tính thì in ra sum
+
+      let arr = [2, 3, 4, 5, 6];
+      // Tìm tổng
+      let sum = 0;
+      for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+      }
+      document.write(sum);
+      document.write(`Trung bình cộng ` + sum / arr.length);
+
+      // tìm phần tử lớn nhất
+      let max = arr[0];
+      for (let i = 1; i <= arr.length; i++) {
+        if (arr[i] > max) mxx = arr[i];
+      }
+
+      //   let n = number(prompt('Nhập số lượng phần tử: '));
+      //     let sum = 0;
+      //     for (let i = 0; i < n; i++) {
+      //         let value = Number(prompt("Nhập vào phần tử số " + i));
+      //         sum += arr[i];
+      //     }
+    </script>
+  </body>
+</html>
