@@ -6,6 +6,6 @@ let array = [1, 2, 3, 4, 5, 6, 7];
 
 let result = [];
 for (let i = 0; i < array.length; i++) {
-    result = array[i] * array[i];
-    document.write(result + ', ')
+    result[i] = array[i] * array[i];
 }
+document.write(result);

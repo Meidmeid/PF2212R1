@@ -3,8 +3,9 @@ let array1 = ["M", "na", "i", "Ke"];
 let array2 = ["y", "me", "s", "lly"];
 // ['My', 'name', 'is', 'Kelly']
 
-let display = [];
+
+let list = [];
 for (let i = 0; i < array1.length; i++) {
-    display = array1[i] + array2[i] + ', ';
-    document.write(display);
-}
+    list[i] = array1[i] + array2[i];
+};
+document.write(list);
