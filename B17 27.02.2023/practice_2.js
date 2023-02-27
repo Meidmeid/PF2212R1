@@ -9,3 +9,11 @@ for (let i = 0; i < array1.length; i++) {
     list[i] = array1[i] + array2[i];
 };
 document.write(list);
+
+/* Bài thẩy sửa
+let array3 = [];
+for(let i in array1){
+    array3.push(array1[i]+array2[i]);
+    
+}
+console.log(array3);*/

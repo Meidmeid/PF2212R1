@@ -9,3 +9,13 @@ for (let i = 0; i < array.length; i++) {
     result[i] = array[i] * array[i];
 }
 document.write(result);
+
+/**
+ * Bài thẩy sửa
+ * for(let i in array1 ) {
+    // array3 = array1[i]*array1[i];
+    array2.push(Math.pow(array1[i], 2)); //hàm tính bình phương
+
+}
+console.log(array2);
+ */

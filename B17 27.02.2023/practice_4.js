@@ -10,9 +10,8 @@ let array2 = [100, 200, 300, 400];
  * 40 100
  */
 
-let array3 = array2.reverse();
-let array4 = [];
+array2.reverse();
+
 for (let i = 0; i < array1.length; i++) {
-    array4 = array1[i] + ' ' + array3[i] + '<br>';
-    document.write(array4);
+    document.write(`${array1[i]} ${array2[i]} <br>`);
 }
