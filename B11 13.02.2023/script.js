@@ -1,12 +1,19 @@
 // Bài 1
 
-let btnAction1 = document.getElementById('btn-action-1');
-btnAction1.addEventListener("click", () => {
+// let btnAction1 = document.getElementById('btn-action-1');
+// btnAction1.addEventListener("click", () => {
+//     let lengthElem = parseInt(document.getElementById('length').value);
+//     let widthElem = parseInt(document.getElementById('width').value);
+//     if (lengthElem == widthElem) { alert('This is a square') }
+//     else { alert('This is a rectangle') }
+// })
+
+function checkSizeRectangle() {
     let lengthElem = parseInt(document.getElementById('length').value);
     let widthElem = parseInt(document.getElementById('width').value);
     if (lengthElem == widthElem) { alert('This is a square') }
     else { alert('This is a rectangle') }
-})
+}
 
 // Bài 2
 let btnAction2 = document.getElementById('btn-action-2');
