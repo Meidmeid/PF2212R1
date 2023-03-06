@@ -1,10 +1,5 @@
 function isLeapYear(year) {
-    if (year % 4 == 0) {
-        if (year % 100 == 0) {
-            if (year % 400 == 0) { console.log('true') }
-            else { console.log('false') }
-        } else { console.log('true') }
-    } else { console.log('false') }
+    return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
 }
-isLeapYear(2005);
-isLeapYear(2000);
+console.log(isLeapYear(2005));
+console.log(isLeapYear(2000));
