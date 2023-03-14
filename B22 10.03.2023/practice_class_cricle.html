@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice 1</title>
+  </head>
+  <body>
+    Bán kính: <input type="number" id="banKinh"/>
+    color: <input type="color" name="" id="color">
+    <fieldset>
+        <legend>
+            Tâm
+        </legend>
+        X: <input type="number" name="" id="tamX">
+        Y: <input type="number" name="" id="tamY">
+    </fieldset>
+
+    <button type="button" onclick="veHinh()">Vẽ</button> <br>
+
+    <canvas id="myCanvas" width="1000" height="800" style="border: 1px solid blue;"></canvas>
+    <script>
+        let canvas = document.getElementById('myCanvas');
+        let context = canvas.getContext('2d');
+
+        function veHinh() {
+            
+        }
+      class cricle {
+        constructor(radius, color, x, y) {
+          this.radius = radius;
+          this.color = color;
+          this.x = x;
+          this.y = y;
+        }
+        getRadius() {
+          return this.radius;
+        }
+        getArea() {
+          return Math.PI * Math.pow(this.radius, 2);
+        }
+        draw(myContext) {
+          var ctx = canvas.getContext("2d");
+          myContext.beginPath();
+          myContext.arc(this.x, this.y, canvas.radius, 0, 2 * Math.PI);
+          mycontext.strokeStyle = this.color;
+          myContext.stroke();
+        }
+      }
+    </script>
+  </body>
+</html>
