@@ -45,6 +45,7 @@ function createTasks() {
     </div>`;
     }
   }
+  alert('Add task successfully !')
 }
 
 // tìm kiếm task
